@@ -62,7 +62,7 @@ def on_message(ws, message):
         print("This token was unavailable.")
         
     elif opr == 0xfc: # Token auth
-        ws.send(bytes([0xf9]), opcode = websocket.ABNF.OPCODE_BINARY)
+        #ws.send(bytes([0xf9]), opcode = websocket.ABNF.OPCODE_BINARY)
         print("Token authenticated.")
         
     elif opr == 0xfb: # Init board
